@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack O. Jones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Jack Jones</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="home.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__links">Pojects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="college.html" class="navbar__links">College</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="work.html" class="navbar__links">Work</a>
+                </li>
+                <!--
+                <div class="navbar__button">
+                    <a href="/" class="button">Resume</a>
+                </div>
+            -->
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h2>Underwater Pip Anomaly Detection</h2>
+                <!-- <h1>More Stuff About The Coffee Robot!!</h1>
+                <p>Details about my the coffee robot</p> -->
+                <!--
+                <button class="main__btn">
+                    <a href="/">Video Presentation</a>
+                </button>
+            -->
+            </div>
+            <div class="main__img-container">
+                <img src="images/pic1.svg" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h1>The Problem</h1>
+        <p>Pipelines as crucial infrastructural components, are subjected to a range of environmental and
+         operational stresses that can result in exterior deformities, which if left unchecked, can lead to larger
+         scale damage, leakage, or catastrophic failure. These deformities can range from dents, rust, and cracks,
+         to other structural inconsistencies. However, manual inspection of these vast pipeline networks is not
+         only inefficient but also prone to human error. The challenge is to design an autonomous solution for a
+         theoretical robot that can traverse the length of pipelines, scanning the exterior with high precision
+         and identifying any abnormalities. Upon detection, this solution should be able to pinpoint the exact GPS
+         location of the defect and provide immediate visual feedback to remote operators. If deemed necessary by
+         the operator based on the initial scan, the robot should possess the capability to conduct a more
+         detailed scan of the area, gathering enough data to produce a high-definition 3D model of the defect.
+         This 3D model should be compatible with CAD modeling software, enabling detailed analysis and planning
+         for potential repairs or maintenance activities.</p>
+
+        <h1>Approach</h1>
+        <p>To address the stated problem, we propose the application-based development of a computer vision-based
+         autonomous system that travels inside emptied-out pipelines and scans the inner walls to detect
+         abnormalities. The system will incorporate real-time image processing to highlight areas of concern.</p>
+
+        <h1>Hardware Design</h1>
+        <p>The software should run on a theoretical robot that will travel along the inside of the pipe with a
+         camera facing toward the wall of the pipe. The camera will be able to rotate to allow the camera to see
+         the full view of the inside of the pipe. To simulate the robot and gather photographic data for to train
+         and test our software. We will make a pipe that is damaged in some areas and a rig to carry a camera to
+         photograph the pipe in the way that the robot would.</p>
+
+        <h1>Software Design</h1>
+        <p>Using machine learning and computer vision, real-time image processing will identify abnormalities such
+         as dents, rust, and cracks. When detected, the robot will drop a GPS pin and relay the suspect images to
+         a remote operator for review.</p>
+
+        <h1>Detailed Scanning</h1>
+        <p>If the operator deems a more thorough examination is necessary, the robot will return to the flagged
+         location and deploy an advanced scanning technique to map the area in high resolution, producing data
+         that can be converted into a 3D model for CAD software integration.</p>
+
+        <h1>Data</h1>
+        <p>We will create a scale model of a pipeline and use the proposed scanning mechanism to simulate
+         real-world data. Overall, the project will utilize two sources of data:</p>
+        <p>Starting Datasets:</p>
+        <p>Using our prototype setup, we will capture images of a healthy pipe and images of a damaged pipe. 
+        We will classify this data and use it to train our software.</p>
+        <p>Updated Data:</p>
+        <p>As the robot runs data will be collected and then later classified and used to retrain and update our
+         software.</p>
+        <h1>Evaluation</h1>
+        <p>The system’s effectiveness will be measured using the following metrics:</p>
+        <p>Precision and Recall:</p>
+        <p>To evaluate how accurately the system identifies true abnormalities without generating excessive
+         false positives.</p>
+        <p>Mapping:</p>
+        <p>If the software is able to assemble an accurate 3D map of the pipe.</p>
+        <p>Speed of Detection:</p>
+        <p>How quickly the system can process and identify defects in real-time.</p>
+        <!--
+        <div class="services__container">
+            <div class="Pservices__card">
+            -->
+                <!--
+                <h2>There's going to be a lot that I'll have to type</h2>
+                <p>I'm very tired of typing</p>
+                -->
+                <!--
+                <button>Coolbot</button>
+            </div>
+            <div class="Pservices__card">
+            -->
+                <!--
+                <h2>How much more will I have to write</h2>
+                <p>Am I done yet?</p>
+                -->
+                <!--
+                <button>CrackerJack</button>
+            </div>
+            <div class="Pservices__card">
+            -->
+                <!--
+                <h2>How much more will I have to write</h2>
+                <p>Am I done yet?</p>
+                -->
+                <!--
+                <button>Coffee Robot</button>
+            </div>
+        </div>
+    -->
+    </div>
+
+    <!--Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="foot__link--wrapper">
+                <div class="footer__link--items">
+                    <h1>Contact</h1>
+                    <a href="/">joj210003@utdallas.edu</a>
+                    <a href="/">330-464-0545</a>
+                    <a href="https://www.linkedin.com/in/jack-jones-501110182/">linkedin</a>
+                </div>
+            </div>
+            <div class="foot__link--wrapper">
+                <div class="footer__link--items">
+                    <h1>Resume</h1>
+                    <a href="/JackJonesResume.pdf">JackJonesResume.pdf</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

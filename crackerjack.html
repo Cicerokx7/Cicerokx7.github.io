@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack O. Jones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Jack Jones</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="home.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__links">Pojects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="college.html" class="navbar__links">College</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="work.html" class="navbar__links">Work</a>
+                </li>
+                <!--
+                <div class="navbar__button">
+                    <a href="/" class="button">Resume</a>
+                </div>
+            -->
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h2>CrackerJack Robot</h2>
+                <!-- <h1>More Stuff About The CrackerJack robot!!</h1>
+                <p>Details about the CrackerJack robot</p> -->
+                <!--
+                <button class="main__btn">
+                    <a href="/">Video Presentation</a>
+                </button>
+            -->
+            </div>
+            <div class="main__img-container">
+                <img src="images/CrackerJack.JPG" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h1>The Competition</h1>
+        <p>In my pursuit of robotics, I participated in the Dallas Personal Robotics Group (DPRG)
+         competition, specifically the Six Can Challenge. This competition required navigating an arena with
+         walls and two gates, with the goal of autonomously moving six randomly placed orange cans through the
+         gate opposite to the robot's starting point.</p>
+        <h1>First Competition</h1>
+        <p>In my initial attempt, despite limited development time, I
+         implemented a strategy involving two ultrasonic sensors on the right, two on the front, a front-facing
+         camera, and a gripper. The robot used the camera to locate and grab the cans based on the color, then
+         executed a sequence involving orientation detection using a green board I placed on the right wall,
+         backing up to the middle of the arena using ultrasonic sensors, and aligning itself with the goal gate
+         for and would move toward the gate until a switch on top of the robot made contact with a post over the
+         gate. This effort secured a third place in the competition.</p>
+        <h1>Second Competition</h1>
+        <p>For my subsequent attempt at the "Six Cans" challenge, I refined the robot's design by replacing the
+         ultrasonic sensors with an RP Lidar sensor and incorporating an LED ring to visualize the lidar sensor's
+         observations during runtime. Additionally, I made improvements to the switch mechanism by attaching it to
+         a servo, allowing it to be out of the lidar sensor's way when not needed. The robot adopted a new
+         approach to monitor its orientation by observing the right wall using the RP Lidar sensor as it moved. It
+         would grab a can, navigate to the middle of the arena, turn towards the goal, raise the switch using the
+         servo, and move toward the goal until the switch detected contact with the goal pole. Despite facing
+         challenges related to the arena's corners affecting lidar sensor readings, this enhanced version
+         showcased my adaptability and problem-solving skills in response to real-world robotic navigation
+         complexities.</p>
+        <h1>Summary</h1>
+        <p>These experiences underscore my commitment to continuous improvement in robotics and programming,
+         emphasizing not only technical expertise but also a strategic and adaptive approach to problem-solving
+         in dynamic competition scenarios. The lessons learned from these competitions contribute to my evolving
+         skill set and drive to push the boundaries of autonomous robotics.</p>
+        <!--
+        <div class="services__container">
+            <div class="Pservices__card">
+            -->
+                <!--
+                <h2>There's going to be a lot that I'll have to type</h2>
+                <p>I'm very tired of typing</p>
+                -->
+                <!--
+                <button>Coolbot</button>
+            </div>
+            <div class="Pservices__card">
+            -->
+                <!--
+                <h2>How much more will I have to write</h2>
+                <p>Am I done yet?</p>
+                -->
+                <!--
+                <button>CrackerJack</button>
+            </div>
+            <div class="Pservices__card">
+            -->
+                <!--
+                <h2>How much more will I have to write</h2>
+                <p>Am I done yet?</p>
+                -->
+                <!--
+                <button>Coffee Robot</button>
+            </div>
+        </div>
+    -->
+    </div>
+
+    <!--Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="foot__link--wrapper">
+                <div class="footer__link--items">
+                    <h1>Contact</h1>
+                    <a href="/">joj210003@utdallas.edu</a>
+                    <a href="/">330-464-0545</a>
+                    <a href="https://www.linkedin.com/in/jack-jones-501110182/">linkedin</a>
+                </div>
+            </div>
+            <div class="foot__link--wrapper">
+                <div class="footer__link--items">
+                    <h1>Resume</h1>
+                    <a href="/JackJonesResume.pdf">JackJonesResume.pdf</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

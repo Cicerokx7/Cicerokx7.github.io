@@ -1,0 +1,555 @@
+* {
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Kumbh Sans', sans-serif; */
+    /* font-family: 'Lucida Handwriting', cursive, sans-serif; */
+    /* font-family: 'FunkyDory', cursive, sans-serif; */
+
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    /* font-family: 'Georgia', serif; */
+
+}
+
+/*Standard size*/
+.navbar {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/*Standard size*/
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+/*Standard size*/
+#navbar__logo {
+    height: 6rem;
+    background-color: #d6a606;
+    background-image: linear-gradient(to top, #6c5707 0%, #cfb652 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__links {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.button {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: #4e4d48;
+    color: #b68e0a; */
+}
+
+.button:hover {
+    color: #fff;
+    /* background: #d6a606; */
+    background-image: linear-gradient(to top, #6c5707 0%, #cfb652 100%);
+    transition: all 0.5s ease;
+}
+
+.navbar__links:hover {
+    color: #d6a606;
+    transition: all 0.5s ease;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+
+/* Hero Serction CSS */
+.main {
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    background-color: #000000;
+    z-index: 1;
+}
+
+.main__content h1 {
+    margin-left: 3rem;
+    font-size: 3rem;
+    background-color: #d6a606;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main__contentP h1 {
+    font-size: 5rem;
+    background-color: #d6a606;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    margin-left: 7%;
+    font-size: 4rem;
+    /* background-color: #d6a606; */
+    /* background-image: linear-gradient(to top, #d6a606 0%, #696455 100%); */
+    background-image: linear-gradient(to top, #6c5707 0%, #cfb652 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 3rem;
+}
+.main__contentP h2 {
+    font-size: 4rem;
+    background-color: #d6a606;
+    background-image: linear-gradient(to top, #d6a606 0%, #696455 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: 'Arial', sans-serif; */
+    /* font-family: 'Helvetica', sans-serif; */
+    /* font-family: 'Verdana', sans-serif; */
+    /* font-family: 'Tahoma', sans-serif; */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+    /* margin-top: 2rem; */
+    /* font-size: 2rem; */
+    font-weight: 700;
+    width: 80%;
+    line-height: 3rem;
+    margin-left: 10%;
+    word-spacing: 0.4rem;
+
+    color: #eeeadc;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.main__contentP p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main__btn {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    background-color: #000000;
+    border-color: #979797;
+    border-width: 0.3rem;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to top, #6e5503 0%, #d6a606 100%);
+    transition: all 0.35s;
+    border-radius: 4rem;
+    /* border: none; */
+}
+
+.main__btn:hover {
+    color: #fff;
+    border: none;
+    background-color: #696455;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+    /* border: none; */
+}
+
+#main__img {
+    height: 35rem;
+}
+
+.main__contentP p{
+    color: #eeeadc;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+    .main__content{
+        text-align: center;
+    }
+    .main__contentP{
+        text-align: center;
+    }
+
+
+/* Services Section CSS */
+.services {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services h1 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    background-color: #d6a606;
+    /* background-image: linear-gradient(to right,
+    #4e4d48 0%,
+    #948436 10%,
+    #c29d25 21%,
+    #d6a606 52%,
+    #948436 78%,
+    #4e4d48 100%
+    ); */
+    background-image: linear-gradient(to top, #6c5707 0%, #cfb652 100%);
+    background-size: 100%;
+    margin-top: 7rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services p{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 70%;
+    color: #eeeadc;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    word-spacing: 0.6rem;
+    line-height: 3rem;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    height: 32rem;
+    width: 19rem;
+    border-radius: 4rem;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/Projects.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.services__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/Projects.jpeg');
+}
+
+.services__card:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/College.jpg');
+}
+
+.services__card:nth-child(4){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pic4.jpg');
+}
+
+.Pservices__card{
+    margin: 1rem;
+    height: 32rem;
+    width: 20rem;
+    border-radius: 4rem;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/CoolBot.JPG');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.Pservices__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/CrackerJack.JPG');
+}
+.Pservices__card:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pic7.jpg');
+}
+.Pservices__card:nth-child(4){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/enorda.jpeg');
+}
+.Pservices__card:nth-child(5){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/Pipe.jfif');
+}
+.Pservices__card:nth-child(6){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/sliderStackExtreme.png');
+}
+.Pservices__card:nth-child(7){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/airportMap.gif');
+}
+
+.services h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.services__card p{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    position: absolute;
+}
+
+.services__card button {
+    /* color: #fff; */
+    color: #000000;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    /* background: #d6a606; */
+    background-image: linear-gradient(to top, #6c5707 0%, #cfb652 100%);
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    width: 15rem;
+    cursor: pointer;
+}
+.Pservices__card button {
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    background: #d6a606;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    font-size: 2rem;
+    width: 15rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.Pservices__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+.Wservices__card{
+    margin: 1rem;
+    height: 32rem;
+    width: 20rem;
+    border-radius: 4rem;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/CoolBot.JPG');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.Wservices__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/aperio.jfif');
+}
+
+
+.services li{
+    list-style-type: circle;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 50rem;
+    color: #eeeadc;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    margin-left: 50%;
+}
+
+/* Footer CSS */
+.footer__container {
+    background-color: #141414;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__links{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.foot__link--items{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.footer__link--items h1 {
+    color: #d6a606;
+}
+
+.footer__link--items > h2 {
+    color: #ff8c7f;
+}
+
+.footer__link--items a {
+    background-color: transparent;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+}
+
+.social__icon--link {
+    color: #fff;
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.website__rights {
+    color: #fff;
+}
+
+
+.main__containerT {
+    display: flex;
+    align-items: center;
+}
+
+.main__content {
+    margin-left: 0rem;
+}
+.main__contentP {
+    margin-left: 0rem;
+}
+
+#main__img {
+    max-width: 200rem;
+    margin-left: 2rem;
+}
+
+.main__content h2 {
+    margin-top: 0;
+}
+.main__contentP h2 {
+    margin-top: 0;
+}
+
+.main__content p {
+    margin-top: 3rem;
+}
+
+.main__contentP p {
+    margin-top: 3rem;
+}
+
+.mainP {
+    background: #000000;
+    height: 170rem;
+}
