@@ -188,8 +188,8 @@
 }
 
 #main__img {
-    height: 35rem;
-    max-width: 200rem;
+    max-height: 35rem;
+    /* min-width: 200rem; */
     margin-left: 2rem;
 }
 
