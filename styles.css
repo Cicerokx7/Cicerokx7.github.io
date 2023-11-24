@@ -534,4 +534,8 @@
     .main__containerT {
         display: block;
     }
+    #main__img {
+        margin-left: 2rem;
+        max-width: 100%;
+    }
 }
