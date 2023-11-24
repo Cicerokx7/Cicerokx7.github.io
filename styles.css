@@ -306,11 +306,13 @@
     list-style-type: circle;
     font-size: 2rem;
     font-weight: 700;
+    /* width: 50rem; */
     color: #eeeadc;
     margin-top: 1rem;
     font-size: 1.5rem;
     align-items: center;
     justify-content: center;
+    /* margin-left: 50%; */
 }
 
 /* Projects: */
@@ -435,20 +437,19 @@
 
 /* Phone */
 @media screen and (max-width: 900px){
-    /* .navbar {
-        display: inline-block;
-    }
-    .navbar__container {
-        display: block;
-    }
-    .navbar__menu {
-        display: block;
-    }
-    .navbar__item{
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
+
+    .services li{
+        list-style-type: circle;
+        font-size: 2rem;
+        font-weight: 700;
+        /* width: 50rem; */
+        color: #eeeadc;
         margin-top: 1rem;
-    } */
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 50%; */
+    }
 
     .navbar__container{
         display: flex;
