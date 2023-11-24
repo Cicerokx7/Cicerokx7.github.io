@@ -24,6 +24,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    /* width: 100%; */
 }
 
 /*Standard size*/
@@ -98,6 +99,7 @@
     margin: 0 auto;
     background-color: #000000;
     z-index: 1;
+    /* width: 100%; */
 }
 
 .main__content h1 {
@@ -195,9 +197,15 @@
         text-align: center;
 }
 
+.main__containerT {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Services Section CSS */
 .services {
+    /* width: 93%; */
     background: #000000;
     display: flex;
     flex-direction: column;
@@ -298,13 +306,11 @@
     list-style-type: circle;
     font-size: 2rem;
     font-weight: 700;
-    width: 50rem;
     color: #eeeadc;
     margin-top: 1rem;
     font-size: 1.5rem;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
 }
 
 /* Projects: */
@@ -425,12 +431,6 @@
 }
 .Wservices__card:nth-child(2){
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/aperio.jfif');
-}
-
-/* T??? */
-.main__containerT {
-    display: flex;
-    align-items: center;
 }
 
 /* Phone */
