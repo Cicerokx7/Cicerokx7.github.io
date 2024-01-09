@@ -80,15 +80,14 @@
          for potential repairs or maintenance activities.</p>
 
         <h1>Approach</h1>
-        <p>To address the stated problem, we propose the application-based development of a computer vision-based
+        <p>To address the stated problem, we proposed the application-based development of a computer vision-based
          autonomous system that travels inside emptied-out pipelines and scans the inner walls to detect
          abnormalities. The system will incorporate real-time image processing to highlight areas of concern.</p>
 
         <h1>Hardware Design</h1>
         <p>The software should run on a theoretical robot that will travel along the inside of the pipe with a
-         camera facing toward the wall of the pipe. The camera will be able to rotate to allow the camera to see
-         the full view of the inside of the pipe. To simulate the robot and gather photographic data for to train
-         and test our software. We will make a pipe that is damaged in some areas and a rig to carry a camera to
+         camera facing toward the wall of the pipe. To simulate the robot and gather photographic data for to train
+         and test our software. We made a pipe that is damaged in some areas and a rig to carry a camera to
          photograph the pipe in the way that the robot would.</p>
 
         <h1>Software Design</h1>
@@ -102,23 +101,13 @@
          that can be converted into a 3D model for CAD software integration.</p>
 
         <h1>Data</h1>
-        <p>We will create a scale model of a pipeline and use the proposed scanning mechanism to simulate
-         real-world data. Overall, the project will utilize two sources of data:</p>
+        <p>We created a scale model of a pipeline and use the proposed scanning mechanism to simulate
+         real-world data.</p>
         <p>Starting Datasets:</p>
-        <p>Using our prototype setup, we will capture images of a healthy pipe and images of a damaged pipe. 
-        We will classify this data and use it to train our software.</p>
-        <p>Updated Data:</p>
-        <p>As the robot runs data will be collected and then later classified and used to retrain and update our
-         software.</p>
-        <h1>Evaluation</h1>
-        <p>The system’s effectiveness will be measured using the following metrics:</p>
-        <p>Precision and Recall:</p>
-        <p>To evaluate how accurately the system identifies true abnormalities without generating excessive
-         false positives.</p>
-        <p>Mapping:</p>
-        <p>If the software is able to assemble an accurate 3D map of the pipe.</p>
-        <p>Speed of Detection:</p>
-        <p>How quickly the system can process and identify defects in real-time.</p>
+        <p>Using our prototype setup, we captured images of a healthy pipe and images of a damaged pipe. 
+        We classified this data and used it to train our software.</p>
+        <p>I developed a CNN that used our data to categorize it as either a broken or safe pipe.</p>
+        <p>Ultimately we were able to successfully label the photos even in the most difficult scenerios.</p>
         <!--
         <div class="services__container">
             <div class="Pservices__card">
