@@ -402,16 +402,14 @@ html, body {
 .Pservices__card:nth-child(5){
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/CrackerJack.JPG');
 }
+
 .Pservices__card:nth-child(6){
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/coffeeRobotCard.jpg');
-}
-.Pservices__card:nth-child(7){
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/sliderStackFull\ -\ Copy.png');
 }
-.Pservices__card:nth-child(8){
+.Pservices__card:nth-child(7){
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/airportMap.gif');
 }
-.Pservices__card:nth-child(9){
+.Pservices__card:nth-child(8){
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/personalWebsiteCard.png');
 }
 
@@ -509,9 +507,12 @@ html, body {
     color: #fff;
 }
 .Wservices__card:nth-child(2){
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/spaceViewTemp.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/coffeeRobotCard.jpg');
 }
 .Wservices__card:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/spaceViewTemp.jpg');
+}
+.Wservices__card:nth-child(4){
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/AperioLogo.png');
 }
 
