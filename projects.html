@@ -2,112 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack O. Jones</title>
+    <title>Projects | Jack O. Jones</title>
+    <meta name="description" content="Projects by Jack O. Jones: AI, computer vision, robotics, and software — plus an archive of earlier college and personal work.">
+    <link rel="canonical" href="https://jackojones.com/projects.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jackojones.com/projects.html">
+    <meta property="og:title" content="Projects | Jack O. Jones">
+    <meta property="og:description" content="Featured AI, robotics, and software projects, with an Earlier Projects archive.">
+    <meta property="og:image" content="https://jackojones.com/images/Projects.jpeg">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">Jack O. Jones</a>
-            <div class="navbar__toggle" id="mobile-menu">
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="organizations.html" class="navbar__links">Organizations</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="projects.html" class="navbar__links">Projects</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="college.html" class="navbar__links">Education</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="work.html" class="navbar__links">Work</a>
-                </li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="experience.html" class="navbar__links">Experience</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__links is-active">Projects</a></li>
+                <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+                <li class="navbar__item"><a href="Jack_Jones_Resume.pdf" class="navbar__links" target="_blank" rel="noopener">Resume</a></li>
+                <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!--Hero Section-->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h2>Projects</h2>
-                <div class="main__img-containerP">
-                    <img src="images/Projects.jpeg" alt="pic" id="main__img">
+    <main class="page">
+        <div class="page__inner">
+            <h1 class="page-title">Projects</h1>
+            <p class="section-kicker">
+                Featured work that best matches my current path in AI systems, computer vision, and applied robotics.
+                Earlier college and personal projects stay available below — nothing removed, just prioritized.
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">Featured</h2>
+            <div class="card-grid">
+                <a class="card card--raytheon" href="Raytheon_Drone_Competitions.html">
+                    <h3>Raytheon Drone Competition</h3>
+                    <button type="button">Group · CV / drones</button>
+                </a>
+                <a class="card card--pipe" href="Underwater_Pipe_Anomaly_Detector.html">
+                    <h3>Underwater Pipe Anomaly Detector</h3>
+                    <button type="button">Group · CNN / CV</button>
+                </a>
+                <a class="card card--coffee" href="coffeebot.html">
+                    <h3>Carousel Coffee LLC</h3>
+                    <button type="button">Robotics + Flutter</button>
+                </a>
+                <a class="card card--todoq" href="TodoQ.html">
+                    <h3>TodoQ</h3>
+                    <button type="button">Flutter / Dart</button>
+                </a>
+                <a class="card card--coolbot" href="coolbot.html">
+                    <h3>Coolbot</h3>
+                    <button type="button">Autonomous robot</button>
+                </a>
+            </div>
+
+            <div class="archive">
+                <h2 class="section-title">Earlier projects</h2>
+                <p class="section-kicker">
+                    College assignments, competition iterations, and foundational builds that document how the skill set grew over time.
+                </p>
+                <div class="card-grid">
+                    <a class="card card--crackerjack" href="crackerjack.html">
+                        <h3>CrackerJack</h3>
+                        <button type="button">DPRG Six-Can</button>
+                    </a>
+                    <a class="card card--slider" href="Slider_Stack_Extreme.html">
+                        <h3>Slider Stack Extreme</h3>
+                        <button type="button">Unity game</button>
+                    </a>
+                    <a class="card card--flight" href="Flight_Route_Planner.html">
+                        <h3>Flight Route Planner</h3>
+                        <button type="button">Algorithms</button>
+                    </a>
+                    <a class="card card--website" href="Personal_Website.html">
+                        <h3>Personal Website</h3>
+                        <button type="button">HTML / CSS / JS</button>
+                    </a>
                 </div>
-                <p> With a profound interest in programming and a lifelong passion for robotics, I've embarked on an exciting journey that seamlessly blends code and innovation. My programming journey began at the age of 8 when I dived into crafting software for robots. This early fascination has guided me through a series of dynamic projects and stimulating coding competitions, often alongside the Dallas Personal Robotics Group (DPRG). </p>
-                    
-                <p>As my academic path unfolded, I continued to expand my coding horizons, undertaking an array of school projects that served as catalysts for my software development skills. These academic pursuits were not only enlightening but also equipped me to practically apply computer science concepts to a multitude of challenges.</p>
-                    
-                <p>While pursuing my degree, I ventured into the realm of software development beyond robotics. My journey led me to an internship where I actively contributed to the creation of a metaverse using Unity. This experience exposed me to the immersive world of virtual environments, cementing my role as a versatile software engineer capable of developing interactive and engaging applications.</p>
-                    
-                <p>On this project page, you'll discover a compilation of projects that represent the evolution of my programming expertise. Each project reflects a distinct phase in my journey, providing valuable insights into my ever-growing skill set. My commitment to problem-solving and my love for technology have propelled me into the realm of computer science, ready to take on fresh challenges and explore innovative solutions.</p>
-                    
-                <p>Explore the projects below to delve into my programming adventures, where I've harnessed code to bring creative ideas to life.</p>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Services Section -->
-    <div class="services">
-        <div class="services__container">
-            <div class="Pservices__card">
-                <h2>Group Project</h2>
-                <button onclick="window.location.href='Raytheon_Drone_Competitions.html'">Raytheon Drone Competition</button>
-            </div>
-            <div class="Pservices__card">
-                
-                <h2>Group Project</h2>
-                <button onclick="window.location.href='Underwater_Pipe_Anomaly_Detector.html'">Underwater Pipe Anomaly Detector</button>
-            </div>
-            <div class="Pservices__card" >
-
-                <!-- <h2>Personal Project</h2> -->
-                <button onclick="window.location.href='TodoQ.html'">TodoQ</button>
-            </div>
-            <div class="Pservices__card" >
-                
-                <h2>Personal Project</h2>
-                <button onclick="window.location.href='coolbot.html'">Coolbot</button>
-            </div>
-            <div class="Pservices__card">
-                
-                <h2>Personal Project for DPRG Six-Can Competition</h2>
-                <button onclick="window.location.href='crackerjack.html'">CrackerJack</button>
-            </div>
-            <!-- <div class="Pservices__card">
-                
-                <h2>Personal Project</h2>
-                <button onclick="window.location.href='coffeebot.html'">Coffee Robot</button>
-            </div> -->
-            <div class="Pservices__card">
-                
-                <h2>Group Project</h2>
-                <button onclick="window.location.href='Slider_Stack_Extreme.html'">Slider Stack Extreme</button>
-            </div>
-            <div class="Pservices__card">
-                
-                <h2>Personal Project</h2>
-                <button onclick="window.location.href='Flight_Route_Planner.html'">Flight Route Planner</button>
-            </div>
-            <div class="Pservices__card">
-                <h2>Personal Project</h2>
-                <button onclick="window.location.href='Personal_Website.html'">Personal Website</button>
-            </div>
+    <footer class="footer">
+        <p>© Jack O. Jones</p>
+        <div class="footer__links">
+            <a href="Jack_Jones_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a href="https://www.linkedin.com/in/jack-jones-501110182/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Cicerokx7" target="_blank" rel="noopener">GitHub</a>
         </div>
-    </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>

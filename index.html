@@ -2,221 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack O. Jones</title>
+    <title>Jack O. Jones | Software Development Engineer</title>
+    <meta name="description" content="Jack O. Jones is a Software Development Engineer at Trellix building AI systems with Python, Vertex AI, Gemini, and BigQuery. Portfolio of software, robotics, and computer vision work.">
+    <meta name="author" content="Jack O. Jones">
+    <link rel="canonical" href="https://jackojones.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jackojones.com/">
+    <meta property="og:title" content="Jack O. Jones | Software Development Engineer">
+    <meta property="og:description" content="Software Development Engineer at Trellix building AI systems. Explore experience, projects, and contact.">
+    <meta property="og:image" content="https://jackojones.com/images/me.jpg">
+    <meta property="og:site_name" content="Jack O. Jones">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jack O. Jones | Software Development Engineer">
+    <meta name="twitter:description" content="Software Development Engineer at Trellix building AI systems.">
+    <meta name="twitter:image" content="https://jackojones.com/images/me.jpg">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">Jack O. Jones</a>
-            <div class="navbar__toggle" id="mobile-menu">
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="organizations.html" class="navbar__links">Organizations</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="projects.html" class="navbar__links">Projects</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="college.html" class="navbar__links">Education</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="work.html" class="navbar__links">Work</a>
-                </li>
-                <!-- <div class="navbar__button">
-                    <a href="/" class="button">Resume</a>
-                </div> -->
+                <li class="navbar__item"><a href="index.html" class="navbar__links is-active">Home</a></li>
+                <li class="navbar__item"><a href="experience.html" class="navbar__links">Experience</a></li>
+                <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+                <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+                <li class="navbar__item"><a href="Jack_Jones_Resume.pdf" class="navbar__links" target="_blank" rel="noopener">Resume</a></li>
+                <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!--Hero Section-->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <button class="main__btn">
-                    <a href="/Jack_Jones_Resume.pdf" target="_blank">Resume</a>
-                </button>
-                <button class="main__btn">
-                    <a href="https://www.linkedin.com/in/jack-jones-501110182/" target="_blank">LinkedIn</a>
-                </button>
-                <button class="main__btn">
-                    <a href="https://github.com/Cicerokx7" target="_blank">GitHub</a>
-                </button>
-                <button class="main__btn">
-                    <a href="/TodoQ.exe" target="_blank">TodoQ</a>
-                </button>
-                <button class="main__btn">
-                    <a href="https://www.youtube.com/watch?v=MOAKe1YCaEE&t=4s" target="_blank">Video Presentation</a>
-                </button>
+    <header class="hero">
+        <div>
+            <p class="hero__eyebrow">Jack O. Jones</p>
+            <h1>Building AI systems that turn complex data into action</h1>
+            <p class="hero__role">Software Development Engineer at Trellix</p>
+            <p class="hero__lede">
+                I design and ship AI-backed tools for customer support and security guidance—
+                wiring company data through BigQuery into Gemini and Vertex AI workflows.
+                Before that path, I spent years in robotics and computer vision, from DPRG competitions
+                to autonomous systems at UTD.
+            </p>
+            <div class="cta-row">
+                <a class="btn btn--solid" href="Jack_Jones_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <a class="btn" href="https://www.linkedin.com/in/jack-jones-501110182/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn" href="https://github.com/Cicerokx7" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn" href="experience.html">Experience</a>
             </div>
         </div>
-        <div class="main__containerT">
-            <div class="main__img-container">
-                <img src='/images/me.jpg' alt="pic" id="main__img">
-            </div>
-            <div class="main__content">
-                <h2>Jack O. Jones</h2>
-                <!-- <h1>About Me</h1> -->
-                <!-- <p>A self-motivated and highly reliable graduating student positioned to contribute strongly to navigate problem solving and advanced programing as well as designing robotic solutions.</p> -->
-                <!-- <p>A self-motivated and highly reliable graduate student positioned to contribute strongly to navigate problem solving and advanced programing as well as designing robotic solutions.</p> -->
-                <!-- <p>I am a recent Computer Science graduate, achieving cum laude honors,
-                 and equipped with a strong foundation of various programming languages,
-                 adept problem-solving skills, and a comprehensive grasp of algorithms
-                 and data structures. My academic journey, complemented by practical
-                 experience in software development, signifies a commitment to staying
-                 at the forefront of technological advancements. In team settings, I
-                 bring a collaborative spirit, effective communication, and a proven
-                 ability to lead through intricate challenges. Notably, my passion
-                 extends to robotics, showcasing a versatile skill set. I am eager to
-                 contribute to the dynamic realm of Computer Science and technology with
-                 my fresh perspective and enthusiasm for innovation.</p> -->
-                 <!-- <p>I am a recent Computer Science graduate, achieving cum laude
-                 honors. I have a strong foundation of various programming languages
-                 and a comprehensive grasp of algorithms and data structures. In team
-                 settings, I bring a collaborative spirit, effective communication,
-                 and a proven ability to lead through intricate challenges. Notably,
-                 my passion extends to robotics, showcasing a versatile skill set. I
-                 am eager to contribute to the dynamic realm of Computer Science and
-                 technology with my fresh perspective and enthusiasm for innovation.</p> -->
-                 <p>I am an Associate Software Engineer for Trellix. While gaining a Salesforce Platform App Builder certification, I am collaborating closely with a great team to build and prototype new AI services that enhance business processes and improve customer experience. I am a Computer Science graduate, achieving cum laude honors. I have a strong foundation in various programming languages and a comprehensive grasp of algorithms. In team settings, I bring a collaborative spirit, effective communication, and a proven ability to lead through intricate challenges. Notably, my passion and comprehensive experience extend to computer vision, machine learning, and robotics.</p>
+        <div class="hero__photo">
+            <img src="images/me.jpg" alt="Portrait of Jack O. Jones">
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Currently at Trellix</h2>
+        <p class="section-kicker">Software Development Engineer · Plano, TX · June 2024 – Present</p>
+        <div class="spotlight">
+            <img src="images/Trellix.png" alt="Trellix">
+            <div>
+                <h3>AI systems for support and security guidance</h3>
+                <p class="meta">Python · BigQuery · Gemini · Vertex AI</p>
+                <ul>
+                    <li>Built AI systems for customer support to improve response efficiency.</li>
+                    <li>Aggregated company data in BigQuery and fed it into Gemini to automate reporting workflows.</li>
+                    <li>Developed personalized security guidance by analyzing product settings and security reports into actionable steps.</li>
+                    <li>Prototyped sentiment analysis that identified over 500 agitated customer cases to support faster resolution.</li>
+                    <li>Created detection for falsely urgent requests to help prioritize support work.</li>
+                    <li>Built a churn prediction prototype with Vertex AI (successful prototype; not yet implemented in production).</li>
+                </ul>
+                <div class="cta-row">
+                    <a class="btn" href="Trellix.html">Read more</a>
+                    <a class="btn" href="experience.html">All experience</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Services Section -->
-    <div class="services">
-        <h1>About Me</h1>
-        <!-- <p>I have had the privilege to study at one of the finest Computer Science schools, University of Texas at Dallas.</p>
-        <p>With a passion for computers and robotics, I have diligently pursued and participated in the Dallas Personal Robotics Group for the past 10 years.</p>
-        <p>With other computer learning desires, I have been studying programming skills and languages since the early age of 7.</p>
-        <p>Thankfully I have had the privilege to study at one of the finest Computer Science schools, University of Texas at Dallas.</p>
-        <p>With this great education and knowledge I am excited to start working and help to change the technological future.</p>
-        <p>(I am excited to perform, work hard, and learn new technologies. )</p>
-        <p>( I enjoy giving presentations while listening to others and find being a loyal team member and leader to be a contribution to a positive and productive work environment.)</p> -->
-        <p>As an Associate Software Engineer for Trellix, I have been working with a team that has been focused on prototyping new innovations that will lessen the burden of our employees and help our customers recieve better service.</p>
-        <p>With a passion for computer programming and robotics, I had the honor to graduate from one of the finest Computer Science schools, The University of Texas at Dallas.</p>
-        <!-- <p>I am a recent Computer Science graduate, achieving cum laude honors, and equipped with a strong foundation of various programming languages, adept problem-solving skills, and a comprehensive grasp of algorithms and data structures. My academic journey, complemented by practical experience in software development, signifies a commitment to staying at the forefront of technological advancements. In team settings, I bring a collaborative spirit, effective communication, and a proven ability to lead through intricate challenges. Notably, my passion extends to robotics, showcasing a versatile skill set. I am eager to contribute to the dynamic realm of Computer Science and technology with my fresh perspective and enthusiasm for innovation.</p> -->
-        <p>While attending UTD, I interned at Space X View as a software engineer, gaining invaluable experience in the workplace.</p>
-        <p>I have also diligently pursued and participated in the Dallas Personal Robotics Group for the past ten years.</p>
-        <p>With this great education as well as experiences, I am excited to start working and help to impact the technological future</p>
+    <section class="section">
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-kicker">A focused slice of recent and high-signal projects. The full timeline lives on Projects, including an Earlier Projects archive.</p>
+        <div class="card-grid">
+            <a class="card card--coffee" href="coffeebot.html">
+                <h3>Carousel Coffee LLC</h3>
+                <button type="button">Robotic coffee system</button>
+            </a>
+            <a class="card card--raytheon" href="Raytheon_Drone_Competitions.html">
+                <h3>Raytheon Drone Competition</h3>
+                <button type="button">Computer vision</button>
+            </a>
+            <a class="card card--pipe" href="Underwater_Pipe_Anomaly_Detector.html">
+                <h3>Pipe Anomaly Detector</h3>
+                <button type="button">Deep learning CV</button>
+            </a>
+            <a class="card card--todoq" href="TodoQ.html">
+                <h3>TodoQ</h3>
+                <button type="button">Flutter app</button>
+            </a>
+        </div>
+    </section>
 
-        <h1>Salesforce Certification</h1>
-        <p>Platform App Builder</p>
-
-        <h1>Programming Languages</h1>
-        <p>Java,   C#,   C++,   Python,   Dart,   Arduino,   SQL,   HTML,   CSS,   JavaScript,   MIPS,   Racket,   Prolog</p>
-        <h1>Microsoft Certification</h1>
-        <p>Azure AI Fundamentals</p>
-        <!-- <p>I'm excited to share that I recently earned my Azure AI Fundamentals Microsoft Certificate. This certification validates my knowledge in foundational AI concepts and proficiency in utilizing Microsoft Azure's AI services. It showcases my commitment to staying ahead in the ever-evolving tech landscape and highlights my ability to apply AI technologies to real-world challenges. I believe this certification will not only demonstrate my dedication to continuous learning but also position me as a valuable contributor to innovative projects in the field of artificial intelligence.</p> -->
-        <h1>Skills</h1>
-        <li>Machine Learning</li>
-        <li>Computer Vision</li>
-        <li>Mobile Application Development</li>
-        <li>Scrum</li>
-        <li>Speaking</li>
-        <li>Leadership</li>
-        <li>Github</li>
-        <li>Market Research</li>
-        <li>Robotics</li>
-        <li>3D Printing</li>
-
-        <h1>Contact</h1>
-        <p>jack8jones@protonmail.com</p>
-        <p>330-464-0545</p>
-
-        <div class="services__container">
-            <div class="services__card">
-                <button onclick="window.location.href='work.html'">Work</button>
+    <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-groups">
+            <div class="skill-group">
+                <h3>Core</h3>
+                <ul class="skill-chips">
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                </ul>
             </div>
-            <div class="services__card">
-                <button onclick="window.location.href='college.html'">Education</button>
+            <div class="skill-group">
+                <h3>AI &amp; data</h3>
+                <ul class="skill-chips">
+                    <li>Vertex AI</li>
+                    <li>Gemini</li>
+                    <li>BigQuery</li>
+                    <li>OpenCV</li>
+                </ul>
             </div>
-            <div class="services__card">
-                <button onclick="window.location.href='projects.html'">Projects</button>
+            <div class="skill-group">
+                <h3>Systems &amp; robotics</h3>
+                <ul class="skill-chips">
+                    <li>Arduino</li>
+                    <li>ROS2</li>
+                    <li>Linux</li>
+                </ul>
             </div>
-            <div class="services__card">
-                <button onclick="window.location.href='organization.html'">Organizations</button>
+            <div class="skill-group">
+                <h3>Also used</h3>
+                <ul class="skill-chips">
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Dart / Flutter</li>
+                    <li>JavaScript</li>
+                    <li>HTML / CSS</li>
+                    <li>Git</li>
+                    <li>Unity</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Certifications</h3>
+                <ul class="skill-chips">
+                    <li>Salesforce Platform App Builder</li>
+                    <li>Microsoft Azure AI Fundamentals</li>
+                </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--Footer Section -->
-    <!-- <div class="footer__container">
+    <footer class="footer">
+        <p>© Jack O. Jones · The Colony, TX</p>
         <div class="footer__links">
-            <div class="foot__link--wrapper"> -->
-                <!-- <div class="footer__link--items">
-                    <h1>This is the footer section</h1>
-                    <a href="/">I'm not sure what to put here</a>
-                    <a href="/">I should probably delete alot of this section</a>
-                    <a href="/">For now I'll just leave the rest as temporary filler</a>
-                    <a href="/">Investments</a>
-                    <a href="/">Terms of Service</a>
-                </div> -->
-                <!-- <div class="footer__link--items"> -->
-                    <!-- <h1>Contact</h1> -->
-                    <!-- <p><a>joj210003@utdallas.edu</a></p>
-                    <p><a>330-464-0545</a></p>
-                    <p><a href="https://www.linkedin.com/in/jack-jones-501110182/">linkedin</a></p>
-                    <p><a href="/JackJonesResume.pdf">JackJonesResume.pdf</a></p> -->
-                    <!-- <a href="/">Investments</a>
-                    <a href="/">Terms of Service</a> -->
-                <!-- </div>
-            </div>
-            <div class="foot__link--wrapper">
-                <div class="footer__link--items"> -->
-                    <!-- <h1>Resume</h1> -->
-                    <!-- <a href="/JackJonesResume.pdf">JackJonesResume.pdf</a> -->
-                <!-- </div> -->
-                <!-- <div class="footer__link--items">
-                    <h1>About Us</h1>
-                    <a href="/">How it works</a>
-                    <a href="/">Testimonals</a>
-                    <a href="/">Careers</a>
-                    <a href="/">Investments</a>
-                    <a href="/">Terms of Service</a>
-                </div> -->
-            <!-- </div>
-        </div> -->
-        <!-- <div class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="fas faa-gen"></i>NEXT</a>
-                </div>
-                <p class="website">NEXT 2020, All rights reserved</p>
-                <div class="social__icons">
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                       +
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div> -->
-    <!-- </div> -->
+            <a href="mailto:jack8jones@protonmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/jack-jones-501110182/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Cicerokx7" target="_blank" rel="noopener">GitHub</a>
+            <a href="Jack_Jones_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
