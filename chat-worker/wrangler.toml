@@ -1,0 +1,13 @@
+name = "jack-site-chat"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# After deploy, set in ../chat-config.js:
+# window.JACK_CHAT_API_URL = "https://jack-site-chat.<subdomain>.workers.dev/token";
+
+[vars]
+OPENAI_REALTIME_MODEL = "gpt-realtime-2.1"
+OPENAI_VOICE = "marin"
+
+# Secret (do not commit):
+#   npx wrangler secret put OPENAI_API_KEY

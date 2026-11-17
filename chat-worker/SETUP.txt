@@ -1,0 +1,32 @@
+Jack site LIVE VOICE chat — ChatGPT Realtime (OpenAI)
+=====================================================
+
+Uses OpenAI Realtime API (same family as ChatGPT voice) over WebRTC.
+Backend only mints short-lived tokens; audio goes browser ↔ OpenAI.
+
+Pay-as-you-go voice minutes (higher than text, fine for low traffic).
+
+Local test
+----------
+1) OpenAI API key with Realtime access: https://platform.openai.com/api-keys
+2) In project root:
+     cp .env.example .env
+     # put OPENAI_API_KEY=sk-... in .env
+3) Run:
+     python3 chat-worker/local_dev.py
+4) Open http://127.0.0.1:8765/
+5) Click “Talk about Jack” → Start conversation → allow mic → speak
+
+Production (Cloudflare Worker)
+------------------------------
+  cd chat-worker
+  npx wrangler login
+  npx wrangler secret put OPENAI_API_KEY
+  npx wrangler deploy
+
+Then set in ../chat-config.js:
+  window.JACK_CHAT_API_URL = "https://jack-site-chat.<subdomain>.workers.dev/token";
+
+Commit/push chat-config.js (URL only — never the API key).
+
+Site must be served over HTTPS (or localhost) for microphone access.

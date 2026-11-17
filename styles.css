@@ -78,6 +78,7 @@ a:hover {
   gap: 1rem;
 }
 
+
 #navbar__logo {
   font-family: var(--font-display);
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
@@ -111,6 +112,14 @@ a:hover {
   color: var(--gold);
 }
 
+button.navbar__links {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
 .navbar__toggle {
   display: none;
   cursor: pointer;
@@ -142,14 +151,15 @@ a:hover {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 3rem 1.25rem 2rem;
+  gap: 1.25rem;
+  padding: 2.5rem 1.25rem 2rem;
   max-width: var(--max);
   margin: 0 auto;
   animation: rise 0.7s ease both;
+  text-align: center;
 }
 
 @keyframes rise {
@@ -163,12 +173,22 @@ a:hover {
   }
 }
 
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 42rem;
+}
+
 .hero__eyebrow {
   color: var(--gold);
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  margin: 0.35rem 0 0.85rem;
+  font-family: var(--font-display);
+  font-weight: 700;
 }
 
 .hero h1,
@@ -209,15 +229,211 @@ a:hover {
 
 .hero__lede {
   max-width: 36rem;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
   color: var(--ink-muted);
 }
 
 .hero__photo {
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 22rem);
   padding: 0.65rem;
   background: linear-gradient(145deg, rgba(214, 166, 6, 0.35), rgba(108, 87, 7, 0.15), rgba(255, 255, 255, 0.06));
   border: 1px solid var(--line);
+}
+
+.voice-dock {
+  position: fixed;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  width: min(calc(100vw - 2rem), 22rem);
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.voice-dock > * {
+  pointer-events: auto;
+}
+
+.voice-dock .chatbot__status {
+  /* screen-reader only — never show text/transcript chrome */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.voice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.chatbot__clear {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.75rem 1.15rem;
+  font-family: var(--font-display);
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  background: rgba(12, 12, 12, 0.82);
+}
+
+.chatbot__clear:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.talk-cta {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--ink);
+  transition: transform 0.2s ease;
+}
+
+.talk-cta:disabled {
+  cursor: wait;
+}
+
+.talk-cta__orb {
+  position: relative;
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 50%;
+  border: 1px solid rgba(228, 200, 90, 0.28);
+  background:
+    radial-gradient(circle at 30% 26%, rgba(236, 210, 120, 0.72) 0%, transparent 35%),
+    radial-gradient(circle at 68% 72%, rgba(50, 38, 8, 0.7) 0%, transparent 44%),
+    linear-gradient(145deg, rgba(190, 148, 28, 0.95), rgba(140, 108, 16, 0.94) 45%, rgba(58, 44, 8, 0.96));
+  background-size: 140% 140%, 160% 160%, 100% 100%;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(214, 166, 6, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: orb-idle 3.4s ease-in-out infinite;
+}
+
+.talk-cta__orb::after {
+  content: "";
+  position: absolute;
+  inset: -0.45rem;
+  border-radius: 50%;
+  border: 1px solid rgba(214, 166, 6, 0.24);
+  box-shadow: 0 0 16px rgba(214, 166, 6, 0.1);
+  animation: orb-halo 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Keep the breathing animation in every live state; only boost glow while speaking. */
+.talk-cta__orb[data-state="listening"],
+.voice-dock[data-state="listening"] .talk-cta__orb,
+.talk-cta__orb[data-state="connecting"],
+.voice-dock[data-state="connecting"] .talk-cta__orb,
+.talk-cta__orb[data-state="thinking"],
+.voice-dock[data-state="thinking"] .talk-cta__orb {
+  animation: orb-idle 3.4s ease-in-out infinite;
+}
+
+.talk-cta__orb[data-state="speaking"],
+.voice-dock[data-state="speaking"] .talk-cta__orb {
+  animation: orb-speak-breathe 1.5s ease-in-out infinite;
+}
+
+.talk-cta__orb[data-state="speaking"]::after,
+.voice-dock[data-state="speaking"] .talk-cta__orb::after,
+.talk-cta__orb[data-state="listening"]::after,
+.voice-dock[data-state="listening"] .talk-cta__orb::after,
+.talk-cta__orb[data-state="connecting"]::after,
+.voice-dock[data-state="connecting"] .talk-cta__orb::after,
+.talk-cta__orb[data-state="thinking"]::after,
+.voice-dock[data-state="thinking"] .talk-cta__orb::after {
+  animation: orb-halo 3.4s ease-in-out infinite;
+}
+
+.talk-cta__orb[data-state="speaking"]::before,
+.voice-dock[data-state="speaking"] .talk-cta__orb::before {
+  content: none;
+}
+
+.talk-cta__orb[data-state="error"],
+.voice-dock[data-state="error"] .talk-cta__orb {
+  background: linear-gradient(160deg, rgba(160, 60, 40, 0.75), rgba(40, 10, 10, 0.85));
+  animation: none;
+}
+
+.talk-cta__orb[data-state="error"]::after,
+.voice-dock[data-state="error"] .talk-cta__orb::after {
+  animation: none;
+  opacity: 0.35;
+  border-color: rgba(180, 70, 50, 0.45);
+}
+
+.talk-cta__label {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.talk-cta:hover .talk-cta__orb {
+  transform: scale(1.06);
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.62),
+    0 0 0 10px rgba(214, 166, 6, 0.1),
+    0 0 22px rgba(214, 166, 6, 0.2);
+}
+
+.voice-dock .chatbot__status {
+  margin: 0;
+  text-align: center;
+  color: var(--ink);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95), 0 0 3px rgba(0, 0, 0, 1);
+}
+
+.voice-dock .chatbot__caption {
+  width: 100%;
+  max-height: 9rem;
+}
+
+.voice-dock .voice-actions {
+  margin-top: 0.15rem;
+}
+
+.talk-cta:hover {
+  transform: translateY(-1px);
+}
+
+.hero .cta-row {
+  justify-content: center;
 }
 
 .hero__photo img,
@@ -679,10 +895,14 @@ a:hover {
 
 /* ---------- Mobile ---------- */
 @media screen and (max-width: 900px) {
+  .navbar {
+    position: sticky;
+  }
+
   .navbar__toggle {
     display: block;
     position: relative;
-    z-index: 1001;
+    z-index: 1002;
   }
 
   .navbar__menu {
@@ -723,16 +943,11 @@ a:hover {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  .hero,
   .spotlight,
   .main__containerT {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-  }
-
-  .hero__photo {
-    order: -1;
   }
 
   #main__img {
@@ -745,4 +960,159 @@ a:hover {
   .main__content h2 {
     text-align: left;
   }
+
+}
+
+/* ---------- Inline voice assistant ---------- */
+@keyframes orb-idle {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    background-position: 28% 24%, 70% 74%, 50% 50%;
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(0, 0, 0, 0.3),
+      0 0 16px rgba(214, 166, 6, 0.16);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.035);
+    background-position: 62% 38%, 40% 60%, 50% 50%;
+    box-shadow:
+      0 16px 34px rgba(0, 0, 0, 0.52),
+      0 0 0 1px rgba(0, 0, 0, 0.3),
+      0 0 26px rgba(214, 166, 6, 0.28);
+  }
+}
+
+@keyframes orb-halo {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes chatbot-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(214, 166, 6, 0.35);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 14px rgba(214, 166, 6, 0);
+  }
+}
+
+/* Breathing retained, with a stronger glow/scale while the AI is talking. */
+@keyframes orb-speak-breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1.02);
+    background-position: 28% 24%, 70% 74%, 50% 50%;
+    box-shadow:
+      0 14px 34px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(0, 0, 0, 0.3),
+      0 0 36px rgba(214, 166, 6, 0.45),
+      0 0 72px rgba(214, 166, 6, 0.22);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.14);
+    background-position: 62% 38%, 40% 60%, 50% 50%;
+    box-shadow:
+      0 24px 52px rgba(0, 0, 0, 0.48),
+      0 0 0 1px rgba(0, 0, 0, 0.3),
+      0 0 68px rgba(214, 166, 6, 0.8),
+      0 0 120px rgba(214, 166, 6, 0.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .talk-cta__orb,
+  .talk-cta__orb::after {
+    animation: none !important;
+  }
+}
+
+.chatbot__status {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  max-width: 18rem;
+  margin: 0;
+}
+
+.chatbot__caption {
+  width: 100%;
+  max-height: 7.5rem;
+  overflow-y: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.chatbot__caption-line {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--line);
+}
+
+.chatbot__caption-line--user {
+  align-self: flex-end;
+  background: linear-gradient(to top, rgba(108, 87, 7, 0.92), rgba(214, 166, 6, 0.88));
+  color: #111;
+}
+
+.chatbot__caption-line--assistant {
+  align-self: flex-start;
+  background: rgba(12, 12, 12, 0.82);
+  color: var(--ink);
+}
+
+.chatbot__end {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.75rem 1.15rem;
+  font-family: var(--font-display);
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: rgba(12, 12, 12, 0.82);
+}
+
+.chatbot__end:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+#chatbot-audio {
+  display: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+/* force-hide transcripts */
+.chatbot__caption,
+.chatbot__caption-line,
+.chatbot__clear {
+  display: none !important;
 }
